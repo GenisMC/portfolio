@@ -23,47 +23,9 @@ const IndexPage = () => {
     // Color Mode Hook
     const { toggleColorMode } = useColorMode();
     // Text color switcher
-    const textColor = useColorModeValue("#444444", "#ddd");
-    // Divider color switcher
-    let barColor = useColorModeValue("#737b8b", "#727272");
-    // Default breakpoint screen width
-    const breakPoint = 768;
+    const textColor = useColorModeValue("#444", "#ddd");
+    const textColorVar = useColorModeValue("#777", "#9AA3B4");
     // Divider component
-    let divider = <Divider />;
-    // Check for screen width 
-    if (typeof window !== "undefined") {
-        // Get screen width
-        const [winDim, detectHW] = useState({
-            winWidth: window.innerWidth,
-            winHeight: window.innerHeight,
-        });
-        // Check for screen width
-        const detectSize = () => {
-            detectHW({
-                winWidth: window.innerWidth,
-                winHeight: window.innerHeight,
-            });
-        };
-        // Add event listener
-        useEffect(
-            function onFirstMount() {
-                window.addEventListener("resize", detectSize);
-
-                return () => {
-                    window.removeEventListener("resize", detectSize);
-                };
-            },
-            [winDim]
-        );
-        // Change divider component based on screen width
-        if (winDim.winWidth >= breakPoint) {
-            divider = (
-                <Center height="200px">
-                    <Divider orientation="vertical" color={barColor} />
-                </Center>
-            );
-        }
-    }
     const accentColor = useColorModeValue("#D40843", "#EA1552");
 
     return (
@@ -121,16 +83,15 @@ const IndexPage = () => {
                         fit="cover"
                     />
                     <VStack spacing={4}>
-                        <Text fontSize="lg" fontWeight="bold" color={textColor}>
+                        <Text fontSize={["4xl","2xl"]} align={["center", "justify"]} fontWeight="bold" color={textColor}>
                             Genis Mora Casado
                         </Text>
-                        <Text fontSize="sm" fontWeight="bold" color={textColor}>
+                        <Text fontSize={["2xl","xl"]} fontWeight="bold" color={textColorVar}>
                             {t("developer")}
                         </Text>
                     </VStack>
-                    {divider}
                     <Container
-                        maxW={["100%", "40%"]}
+                        maxW={["100%", "35%"]}
                         height="3xs"
                         p={6}
                         borderRadius="16"
@@ -140,7 +101,7 @@ const IndexPage = () => {
                             justify="space-evenly"
                             height="100%"
                         >
-                            <Text fontSize={["3xl","2xl"]} fontWeight="bold">{t("tech")}</Text>
+                            <Text fontSize={["2xl","xl"]} fontWeight="bold">{t("tech")}</Text>
                             <Text
                                 fontSize="md"
                                 align={["center", "justify"]}
@@ -149,7 +110,7 @@ const IndexPage = () => {
                             >
                                 React, TypeScript, Flutter, NodeJs.
                             </Text>
-                            <Text fontSize="md" align="justify">
+                            <Text fontSize="md" color={textColorVar} align="justify">
                                 HTML, CSS, Angular, JavaScript, Python, Java,
                                 C#, SQL, MongoDB, PostgreSQL, Firebase,
                                 Git, Docker {t("more")}

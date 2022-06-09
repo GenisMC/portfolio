@@ -14,46 +14,57 @@ import {
     Divider,
     Text,
 } from "@chakra-ui/react";
-import SkillContainer from "./components/skill_container";
+import ProjectContainer from "./components/project_container";
 import { useTranslation } from "react-i18next";
 
 const IndexPage = () => {
+    // Translation Hook
     const { t, i18n } = useTranslation();
+    // Color Mode Hook
     const { toggleColorMode } = useColorMode();
+    // Text color switcher
     const textColor = useColorModeValue("#444444", "#ddd");
+    // Divider color switcher
     let barColor = useColorModeValue("#737b8b", "#727272");
-    const [winDim, detectHW] = useState({
-        winWidth: window.innerWidth,
-        winHeight: window.innerHeight,
-    });
-    const detectSize = () => {
-        detectHW({
+    // Default breakpoint screen width
+    const breakPoint = 768;
+    // Divider component
+    let divider = <Divider />;
+    // Check for screen width 
+    if (typeof window !== "undefined") {
+        // Get screen width
+        const [winDim, detectHW] = useState({
             winWidth: window.innerWidth,
             winHeight: window.innerHeight,
         });
-    };
-    useEffect(
-        function onFirstMount() {
-            window.addEventListener("resize", detectSize);
+        // Check for screen width
+        const detectSize = () => {
+            detectHW({
+                winWidth: window.innerWidth,
+                winHeight: window.innerHeight,
+            });
+        };
+        // Add event listener
+        useEffect(
+            function onFirstMount() {
+                window.addEventListener("resize", detectSize);
 
-            return () => {
-                window.removeEventListener("resize", detectSize);
-            };
-        },
-        [winDim]
-    );
-    const accentColor = useColorModeValue("#D40843", "#EA1552");
-    const breakPoint = 768;
-    let divider = <Divider />;
-    if (winDim.winWidth > breakPoint) {
-        divider = (
-            <Center height="200px">
-                <Divider orientation="vertical" color={barColor} />
-            </Center>
+                return () => {
+                    window.removeEventListener("resize", detectSize);
+                };
+            },
+            [winDim]
         );
-    } else {
-        divider = <Divider orientation="horizontal" color={barColor}/>;
+        // Change divider component based on screen width
+        if (winDim.winWidth >= breakPoint) {
+            divider = (
+                <Center height="200px">
+                    <Divider orientation="vertical" color={barColor} />
+                </Center>
+            );
+        }
     }
+    const accentColor = useColorModeValue("#D40843", "#EA1552");
 
     return (
         <Container minW="100vw">
@@ -129,7 +140,7 @@ const IndexPage = () => {
                             justify="space-evenly"
                             height="100%"
                         >
-                            <Text fontSize="xl">{t("tech")}</Text>
+                            <Text fontSize={["3xl","2xl"]} fontWeight="bold">{t("tech")}</Text>
                             <Text
                                 fontSize="md"
                                 align={["center", "justify"]}
@@ -140,23 +151,27 @@ const IndexPage = () => {
                             </Text>
                             <Text fontSize="md" align="justify">
                                 HTML, CSS, Angular, JavaScript, Python, Java,
-                                C#, C++, SQL, MongoDB, PostgreSQL, Firebase,
+                                C#, SQL, MongoDB, PostgreSQL, Firebase,
                                 Git, Docker {t("more")}
                             </Text>
                         </VStack>
                     </Container>
                 </Stack>
-                <Text fontSize="3xl" fontWeight="bold" color={textColor}>
+                <Text fontSize={["3xl","2xl"]} fontWeight="bold" color={textColor}>
                     {t("projects")}
                 </Text>
                 <Stack direction={["column", "row"]} spacing={8}>
-                    <SkillContainer
-                        title=""
-                        text="HTML, CSS, React, Angular, NodeJs, Flutter, JavaScript, TypeScript"
+                    <ProjectContainer
+                        title="HeyPlan"
+                        subtitle="Flutter"
+                        image="https://github.com/CLEM-2/CLEM-2/raw/main/heyplan-logob.png"
+                        text={t("heyplandesc")}
                     />
-                    <SkillContainer
-                        title="other2"
-                        text="HTML, CSS, React, Angular, NodeJs, Flutter, JavaScript, TypeScript"
+                    <ProjectContainer
+                        title={t('schedulerTitle')}
+                        subtitle="React native"
+                        image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
+                        text={t("schedulerDesc")}
                     />
                 </Stack>
             </VStack>

@@ -138,7 +138,7 @@ const IndexPage = () => {
                     <ProjectContainer
                         title={"PandaBox"}
                         subtitle="Angular NodeJs"
-                        image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
+                        image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
                         text={t("pandaDesc")}
                     />
                 </Stack>

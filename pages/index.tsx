@@ -24,12 +24,13 @@ const IndexPage = () => {
     const { toggleColorMode } = useColorMode();
     // Text color switcher
     const textColor = useColorModeValue("#444", "#ddd");
+    // Variant of the text color
     const textColorVar = useColorModeValue("#777", "#9AA3B4");
-    // Divider component
+    // Accent color
     const accentColor = useColorModeValue("#D40843", "#EA1552");
 
     return (
-        <Container minW="100vw">
+        <Container pb={4} minW="100vw">
             <HStack
                 position="relative"
                 mt={8}
@@ -133,6 +134,12 @@ const IndexPage = () => {
                         subtitle="React native"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
                         text={t("schedulerDesc")}
+                    />
+                    <ProjectContainer
+                        title={"PandaBox"}
+                        subtitle="Angular NodeJs"
+                        image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
+                        text={t("pandaDesc")}
                     />
                 </Stack>
             </VStack>

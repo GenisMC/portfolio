@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
 import {
     Container,
-    Center,
     HStack,
     VStack,
     Stack,
@@ -11,7 +9,6 @@ import {
     Switch,
     useColorMode,
     useColorModeValue,
-    Divider,
     Text,
 } from "@chakra-ui/react";
 import ProjectContainer from "./components/project_container";
@@ -84,10 +81,19 @@ const IndexPage = () => {
                         fit="cover"
                     />
                     <VStack spacing={4}>
-                        <Text fontSize={["4xl","2xl"]} align={["center", "justify"]} fontWeight="bold" color={textColor}>
+                        <Text
+                            fontSize={["4xl", "2xl"]}
+                            align={["center", "justify"]}
+                            fontWeight="bold"
+                            color={textColor}
+                        >
                             Genis Mora Casado
                         </Text>
-                        <Text fontSize={["2xl","xl"]} fontWeight="bold" color={textColorVar}>
+                        <Text
+                            fontSize={["2xl", "xl"]}
+                            fontWeight="bold"
+                            color={textColorVar}
+                        >
                             {t("developer")}
                         </Text>
                     </VStack>
@@ -102,7 +108,9 @@ const IndexPage = () => {
                             justify="space-evenly"
                             height="100%"
                         >
-                            <Text fontSize={["2xl","xl"]} fontWeight="bold">{t("tech")}</Text>
+                            <Text fontSize={["2xl", "xl"]} fontWeight="bold">
+                                {t("tech")}
+                            </Text>
                             <Text
                                 fontSize="md"
                                 align={["center", "justify"]}
@@ -111,18 +119,26 @@ const IndexPage = () => {
                             >
                                 React, TypeScript, Flutter, NodeJs.
                             </Text>
-                            <Text fontSize="md" color={textColorVar} align="justify">
+                            <Text
+                                fontSize="md"
+                                color={textColorVar}
+                                align="justify"
+                            >
                                 HTML, CSS, Angular, JavaScript, Python, Java,
-                                C#, SQL, MongoDB, PostgreSQL, Firebase,
-                                Git, Docker {t("more")}
+                                C#, SQL, MongoDB, PostgreSQL, Firebase, Git,
+                                Docker {t("more")}
                             </Text>
                         </VStack>
                     </Container>
                 </Stack>
-                <Text fontSize={["3xl","2xl"]} fontWeight="bold" color={textColor}>
+                <Text
+                    fontSize={["3xl", "2xl"]}
+                    fontWeight="bold"
+                    color={textColor}
+                >
                     {t("projects")}
                 </Text>
-                <Stack direction={["column", "row"]} spacing={8}>
+                <Stack direction={{ base: "column", md: "row" }} spacing={8}>
                     <ProjectContainer
                         title="HeyPlan"
                         subtitle="Flutter"
@@ -130,7 +146,7 @@ const IndexPage = () => {
                         text={t("heyplandesc")}
                     />
                     <ProjectContainer
-                        title={t('schedulerTitle')}
+                        title={t("schedulerTitle")}
                         subtitle="React native"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
                         text={t("schedulerDesc")}
@@ -142,6 +158,10 @@ const IndexPage = () => {
                         text={t("pandaDesc")}
                     />
                 </Stack>
+            </VStack>
+            <VStack mt={6}  align="center" spacing={4} width="100%">
+            <Text fontSize="2xl" fontWeight="bold" >Hola</Text>
+            <Text fontSize="lg">Molt text</Text>
             </VStack>
         </Container>
     );

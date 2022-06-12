@@ -14,7 +14,7 @@ const ProjectContainer = (props: any) => {
     const accentColor = useColorModeValue("#D40843", "#EA1552");
 
     return (
-        <Container maxW="md" height={{base: "lg",md: "xs"}} bg={bgColor} p={6} borderRadius="16">
+        <Container maxW="md" minW="3xs" bg={bgColor} p={6} borderRadius="16">
             <VStack
                 spacing={2}
                 align="center"
@@ -23,11 +23,11 @@ const ProjectContainer = (props: any) => {
                 divider={<StackDivider borderColor={barColor} />}
             >
                 <Stack direction={["column", "row"]}  align="baseline" >
-                <Text fontSize={["2xl","xl"]} align={["center","justify"]}>{props.title} </Text>
+                <Text fontSize={["2xl","xl"]} align="center">{props.title} </Text>
                 <Text fontSize={["xl","lg"]} align={["center","justify"]} color={accentColor}>{props.subtitle}</Text>
                 </Stack>
-                <Stack direction={["column", "row"]} spacing={2} p={2}>
-                <Image maxW={["100%","40%"]} objectFit="contain" src={props.image}/>
+                <Stack maxH={{base:"100%",xl:"40%"}} direction={{base:"column", xl:"row"}} align="center" spacing={2} p={2}>
+                <Image maxW={{base:"80%",xl:"40%"}} objectFit="contain" src={props.image}/>
                <Text fontSize="md" align="justify">
                     {props.text}
                 </Text>

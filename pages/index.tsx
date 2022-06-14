@@ -25,11 +25,15 @@ const IndexPage = () => {
     const textColorVar = useColorModeValue("#777", "#9AA3B4");
     // Accent color
     const accentColor = useColorModeValue("#D40843", "#EA1552");
+    // Variant background
+    let bgColor = useColorModeValue("#f2f2f2", "#232b3b");
 
     return (
-        <Container pb={4} minW="100vw">
+        <VStack p={4}>
             <HStack
+                minW="90%"
                 position="relative"
+                pb={8}
                 mt={8}
                 mx={[0, 0, 12]}
                 spacing={4}
@@ -158,12 +162,15 @@ const IndexPage = () => {
                         text={t("pandaDesc")}
                     />
                 </Stack>
+                <Text fontSize="2xl" fontWeight="bold" >{t('about')}</Text>
+                <Text maxW={["100%","50%"]} fontSize="lg" align="justify" p={2} color={textColorVar}>{t('aboutDesc')}</Text>
+                <Text fontSize="2xl" fontWeight="bold" >{t('contact')}</Text>
+                <Text maxW={["100%","50%"]} fontSize="lg" align="justify" p={2} color={textColorVar}>{t('contactDesc')}</Text>
+                <HStack spacing={4} bg={bgColor} minW="95%" p={2} borderRadius="16">
+                     
+                </HStack>
             </VStack>
-            <VStack mt={6}  align="center" spacing={4} width="100%">
-            <Text fontSize="2xl" fontWeight="bold" >Hola</Text>
-            <Text fontSize="lg">Molt text</Text>
-            </VStack>
-        </Container>
+        </VStack>
     );
 };
 

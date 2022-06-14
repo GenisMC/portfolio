@@ -16,13 +16,13 @@ const ProjectContainer = (props: any) => {
     return (
         <Container maxW="md" minW="3xs" bg={bgColor} p={6} borderRadius="16">
             <VStack
-                spacing={2}
+                spacing={4}
                 align="center"
                 justify="space-evenly"
                 height="100%"
                 divider={<StackDivider borderColor={barColor} />}
             >
-                <Stack direction={["column", "row"]}  align="baseline" >
+                <Stack direction={["column", "row"]} align="center" >
                 <Text fontSize={["2xl","xl"]} align="center">{props.title} </Text>
                 <Text fontSize={["xl","lg"]} align={["center","justify"]} color={accentColor}>{props.subtitle}</Text>
                 </Stack>

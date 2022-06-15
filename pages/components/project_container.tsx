@@ -14,7 +14,7 @@ const ProjectContainer = (props: any) => {
     const accentColor = useColorModeValue("#D40843", "#EA1552");
 
     return (
-        <Container maxW="md" minW="3xs" bg={bgColor} p={6} borderRadius="16">
+        <Container my={[2,0]} mx={[0,2]} maxW="md" minW="3xs" bg={bgColor} p={6} borderRadius="16">
             <VStack
                 spacing={4}
                 align="center"

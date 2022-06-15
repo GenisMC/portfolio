@@ -2,6 +2,7 @@ import {
     Container,
     HStack,
     VStack,
+    Flex,
     Stack,
     ButtonGroup,
     Button,
@@ -142,7 +143,7 @@ const IndexPage = () => {
                 >
                     {t("projects")}
                 </Text>
-                <Stack direction={{ base: "column", md: "row" }} spacing={8}>
+                <Flex p={2} direction={{ base: "column", md: "row" }} >
                     <ProjectContainer
                         title="HeyPlan"
                         subtitle="Flutter"
@@ -161,14 +162,47 @@ const IndexPage = () => {
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
                         text={t("pandaDesc")}
                     />
-                </Stack>
-                <Text fontSize="2xl" fontWeight="bold" >{t('about')}</Text>
-                <Text maxW={["100%","50%"]} fontSize="lg" align="justify" p={2} color={textColorVar}>{t('aboutDesc')}</Text>
-                <Text fontSize="2xl" fontWeight="bold" >{t('contact')}</Text>
-                <Text maxW={["100%","50%"]} fontSize="lg" align="justify" p={2} color={textColorVar}>{t('contactDesc')}</Text>
-                <HStack spacing={4} bg={bgColor} minW="95%" p={2} borderRadius="16">
-                     
-                </HStack>
+                </Flex>
+                <Text fontSize="2xl" fontWeight="bold">
+                    {t("about")}
+                </Text>
+                <Text
+                    maxW={{base:"100%", lg:"50%"}}
+                    fontSize="lg"
+                    align="justify"
+                    p={2}
+                    color={textColorVar}
+                >
+                    {t("aboutDesc")}
+                </Text>
+                <VStack spacing={0} minW="100%">
+                    <Text fontSize="2xl" fontWeight="bold">
+                        {t("contact")}
+                    </Text>
+                    <Text
+                        maxW={["95%", "50%"]}
+                        fontSize="lg"
+                        align="justify"
+                        p={2}
+                        color={textColorVar}
+                    >
+                        {t("contactDesc")}
+                    </Text>
+                    <Flex
+                        bg={bgColor}
+                        minW="95%"
+                        borderRadius="16"
+                        align="center"
+                        justify="center"
+                        wrap="wrap"
+                    >
+                    <a href="mailto:genis9d@gmail.com"><Image p={2}  src="https://img.icons8.com/color/48/undefined/gmail-new.png"/></a>
+                    <a href="https://www.linkedin.com/in/genis-mora-casado-8263a4233/"><Image p={2} src="https://img.icons8.com/color/48/undefined/linkedin-circled--v1.png"/></a>
+                    <a href="tel:+34693016402"><Image p={2} src="https://img.icons8.com/color/48/undefined/apple-phone.png"/></a>
+                    <a href="mailto:genis9d@gmail.com"><Image p={2} src="https://img.icons8.com/color/48/undefined/instagram-new--v1.png"/></a>
+                    <a href="mailto:genis9d@gmail.com"><Image p={2} src="https://img.icons8.com/color/48/undefined/telegram-app--v1.png"/></a>
+                    </Flex>
+                </VStack>
             </VStack>
         </VStack>
     );

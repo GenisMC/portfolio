@@ -14,8 +14,10 @@ const ProjectContainer = (props: any) => {
     const accentColor = useColorModeValue("#D40843", "#EA1552");
 
     return (
-        <Container my={[2,0]} mx={[0,2]} maxW="md" minW="3xs" bg={bgColor} p={6} borderRadius="16">
+        <Container id="projectContainer" my={[2,0]} mx={[0,2]} maxW="md" minW="3xs" bg={bgColor} p={6} borderRadius="16">
+        <Container id="afterBox">
             <VStack
+                id="allstack"
                 spacing={4}
                 align="center"
                 justify="space-evenly"
@@ -33,6 +35,7 @@ const ProjectContainer = (props: any) => {
                 </Text>
                 </Stack>
             </VStack>
+</Container>
         </Container>
     );
 };

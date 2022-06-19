@@ -149,7 +149,7 @@ const IndexPage = () => {
                         subtitle="Flutter"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/heyplan-logob.png"
                         text={t("heyplandesc")}
-                        link="./components/project_container.tsx"
+                        link="./heyplan"
                     />
                     <ProjectContainer
                         title={t("schedulerTitle")}

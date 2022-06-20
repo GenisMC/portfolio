@@ -81,7 +81,7 @@ const IndexPage = () => {
                 >
                     <Image
                         borderRadius="full"
-                        src="https://github.com/CLEM-2/CLEM-2/blob/main/1650976988947.jpg?raw=true"
+                        src="https://github.com/CLEM-2/CLEM-2/blob/main/heyplan/1650976988947.jpg?raw=true"
                         boxSize="3xs"
                         fit="cover"
                     />

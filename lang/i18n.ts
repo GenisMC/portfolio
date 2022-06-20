@@ -44,6 +44,7 @@ export default i18next
                     contactDesc: "Puedes contactarme a través de los siguientes enlaces:",
                     heyplan: {
                         title: "Una aplicación móvil hecha con Flutter",
+                        desc: "Esta es la interfaz de usuario básica. Heyplan hace más fácil para personas de cualquier edad crear planes con amigos o conocer nuevas personas con eventos personalizados que cualquier usuario puede crear.\n A estos eventos o citas los llamamos \"PLANES\". \n Los usuarios pueden crear un perfil y añadir 'etiquetas' a él, que posteriormente serán útiles para encontrar planes similares a los gustos del usuario. \n Cuando se esta deslizando en busqueda de planes el usuario puede enviar una solicitud a los administradores de los planes. Luego, estos deben aceptar la solicitud para que el usuario pueda unirse al plan. \n Una vez que se haya unido, el usuario puede hablar con todos los miembros del plan."
                     },
                 },
             },

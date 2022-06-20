@@ -11,7 +11,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Carousel from "better-react-carousel";
 
-const HeyPlan = (props:any) => {
+const HeyPlan = (props: any) => {
     const accentColor = useColorModeValue("#D40843", "#EA1552");
     const bgColor = useColorModeValue("#f2f2f2", "#232b3b");
     const { t, i18n } = useTranslation();
@@ -25,8 +25,8 @@ const HeyPlan = (props:any) => {
                 variant="ghost"
                 color={accentColor}
                 position="fixed"
-                top={["90%","5%"]}
-                left={["85%","5%"]}
+                top={["90%", "5%"]}
+                left={["85%", "5%"]}
                 zIndex={1000}
                 onClick={() => window.open("/", "_self")}
             />
@@ -70,7 +70,7 @@ const HeyPlan = (props:any) => {
             >
                 <Carousel.Item>
                     <Image
-                    borderRadius="16px"
+                        borderRadius="16px"
                         src="https://github.com/GenisMC/CLEM-2/raw/main/heyplan/1655721137259.jpg"
                         alt="heyplan-1"
                     />
@@ -78,34 +78,34 @@ const HeyPlan = (props:any) => {
                 <Carousel.Item>
                     <Image
                         src="https://github.com/GenisMC/CLEM-2/raw/main/heyplan/1655721137267.jpg"
-                    borderRadius="16px"
+                        borderRadius="16px"
                         alt="heyplan-1"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
                         src="https://github.com/GenisMC/CLEM-2/raw/main/heyplan/1655721137273.jpg"
-                    borderRadius="16px"
+                        borderRadius="16px"
                         alt="heyplan-1"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
                         src="https://github.com/GenisMC/CLEM-2/raw/main/heyplan/1655721137292.jpg"
-                    borderRadius="16px"
+                        borderRadius="16px"
                         alt="heyplan-1"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
                         src="https://github.com/GenisMC/CLEM-2/raw/main/heyplan/1655721137279.jpg"
-                    borderRadius="16px"
+                        borderRadius="16px"
                         alt="heyplan-1"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image
-                    borderRadius="16px"
+                        borderRadius="16px"
                         src="https://github.com/GenisMC/CLEM-2/raw/main/heyplan/1655721137286.jpg"
                         alt="heyplan-1"
                     />
@@ -113,7 +113,7 @@ const HeyPlan = (props:any) => {
                 <Carousel.Item>
                     <Image
                         src="https://github.com/GenisMC/CLEM-2/raw/main/heyplan/1655721137297.jpg"
-                    borderRadius="16px"
+                        borderRadius="16px"
                         alt="heyplan-1"
                     />
                 </Carousel.Item>

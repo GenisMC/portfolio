@@ -25,6 +25,9 @@ export default i18next
                         title: "A mobile app made with Flutter",
                         desc: "This is the basic user interface flow. Heyplan means to make it easier for people of any age to create appointments with friends or to meet new people with custom events any user can create.\n We call this events or appointments \"PLANS\". \n Users can create a profile and add 'tags' to it, which later on will be used to find plans similar to the user likings. \n When sliding through plans the user can choose to send a request to the plan owners. After that the owners need to accept the request for the user to join the plan. \n Once that is done a chat is avilable for all the users in the plan to communicate."
                     },
+                    scheduler: {
+                        title: "A web app made with React",
+                    },
                 },
             },
             es: {
@@ -45,6 +48,9 @@ export default i18next
                     heyplan: {
                         title: "Una aplicación móvil hecha con Flutter",
                         desc: "Esta es la interfaz de usuario básica. Heyplan hace más fácil para personas de cualquier edad crear planes con amigos o conocer nuevas personas con eventos personalizados que cualquier usuario puede crear.\n A estos eventos o citas los llamamos \"PLANES\". \n Los usuarios pueden crear un perfil y añadir 'etiquetas' a él, que posteriormente serán útiles para encontrar planes similares a los gustos del usuario. \n Cuando se esta deslizando en busqueda de planes el usuario puede enviar una solicitud a los administradores de los planes. Luego, estos deben aceptar la solicitud para que el usuario pueda unirse al plan. \n Una vez que se haya unido, el usuario puede hablar con todos los miembros del plan."
+                    },
+                    scheduler: {
+                        title: "Una aplicación web hecha con React",
                     },
                 },
             },

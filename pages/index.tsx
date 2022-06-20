@@ -156,6 +156,7 @@ const IndexPage = () => {
                         subtitle="React native"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
                         text={t("schedulerDesc")}
+                        link="./scheduler"
                     />
                     <ProjectContainer
                         title={"PandaBox"}

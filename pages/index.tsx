@@ -74,7 +74,7 @@ const IndexPage = () => {
             </HStack>
             <VStack spacing={8} mt={8}>
                 <Stack
-                    direction={["column", "row"]}
+                    direction={{base:"column", lg:"row"}}
                     align="center"
                     justify="center"
                     spacing={4}
@@ -103,7 +103,7 @@ const IndexPage = () => {
                         </Text>
                     </VStack>
                     <Container
-                        maxW={["100%", "35%"]}
+                        maxW={{base:"100%", lg:"35%"}}
                         height="3xs"
                         p={6}
                         borderRadius="16"

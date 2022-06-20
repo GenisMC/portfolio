@@ -21,6 +21,10 @@ export default i18next
                     aboutDesc: "I am a 22 year old full stack developer that never ceases to learn. I have a passion for coding, it is my job and my hobby.\n I am currently working on a project called \"Food Scheduler\", which is a web app that allows you to create and organize a weekly schedule for your meals. More about it in the projects section.",
                     contact: "Contact",
                     contactDesc: "You can contact me through the following links:",
+                    heyplan: {
+                        title: "A mobile app made with Flutter",
+                        desc: "This is the basic user interface flow. Heyplan means to make it easier for people of any age to create appointments with friends or to meet new people with custom events any user can create.\n We call this events or appointments \"PLANS\". \n Users can create a profile and add 'tags' to it, which later on will be used to find plans similar to the user likings. \n When sliding through plans the user can choose to send a request to the plan owners. After that the owners need to accept the request for the user to join the plan. \n Once that is done a chat is avilable for all the users in the plan to communicate."
+                    },
                 },
             },
             es: {
@@ -38,6 +42,9 @@ export default i18next
                     aboutDesc: "Soy desarrollador full stack de 22 años que nunca para de aprender. Tengo una pasión por la programación, es mi trabajo y mi hobby.\n Actualmente estoy trabajando en un proyecto llamado \"Planificador de comida\", es una aplicación web que permite crear y organizar una semana planificada para tus comidas. Más sobre él en la sección de proyectos.",
                     contact: "Contacto",
                     contactDesc: "Puedes contactarme a través de los siguientes enlaces:",
+                    heyplan: {
+                        title: "Una aplicación móvil hecha con Flutter",
+                    },
                 },
             },
         },

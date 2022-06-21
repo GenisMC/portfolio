@@ -1,35 +1,24 @@
 import React from "react";
 import {
-    IconButton,
     Stack,
     VStack,
     Text,
     Image,
     useColorModeValue,
 } from "@chakra-ui/react";
-import { FaArrowLeft } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Carousel from "better-react-carousel";
+import BackButton from './components/back_button';
 
-const HeyPlan = (props: any) => {
+
+const HeyPlan = () => {
     const accentColor = useColorModeValue("#D40843", "#EA1552");
     const bgColor = useColorModeValue("#f2f2f2", "#232b3b");
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
+    <>
         <VStack spacing={8} mt={8} align="center">
-            <IconButton
-                icon={<FaArrowLeft />}
-                bg={bgColor}
-                size="lg"
-                aria-label="arrow-left"
-                variant="ghost"
-                color={accentColor}
-                position="fixed"
-                top={["90%", "5%"]}
-                left={["85%", "5%"]}
-                zIndex={1000}
-                onClick={() => window.open("/", "_self")}
-            />
+            <BackButton />
             <Stack direction={["column", "row"]} align="baseline">
                 <Text fontSize="3xl" fontWeight="bold">
                     HeyPlan
@@ -119,6 +108,7 @@ const HeyPlan = (props: any) => {
                 </Carousel.Item>
             </Carousel>
         </VStack>
+              </>
     );
 };
 

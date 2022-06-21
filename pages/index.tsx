@@ -163,6 +163,7 @@ const IndexPage = () => {
                         subtitle="Angular NodeJs"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
                         text={t("pandaDesc")}
+                        link="./scheduler"
                     />
                 </Flex>
                 <Text fontSize="2xl" fontWeight="bold">

@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import ProjectContainer from "./components/project_container";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 const IndexPage = () => {
     // Translation Hook
@@ -144,27 +145,30 @@ const IndexPage = () => {
                     {t("index.projects")}
                 </Text>
                 <Flex p={2} direction={{ base: "column", md: "row" }} >
+                            <Link href="./heyplan">
                     <ProjectContainer
                         title="HeyPlan"
                         subtitle="Flutter"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/heyplan-logob.png"
                         text={t("index.heyplandesc")}
-                        link="./heyplan"
                     />
+                            </Link>
+                            <Link href="./scheduler">
                     <ProjectContainer
                         title={t("index.schedulerTitle")}
                         subtitle="React native"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
                         text={t("index.schedulerDesc")}
-                        link="./scheduler"
                     />
+                            </Link>
+                            <Link href="./pandabox">
                     <ProjectContainer
                         title={"PandaBox"}
                         subtitle="Angular NodeJs"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
                         text={t("index.pandaDesc")}
-                        link="./pandabox"
                     />
+                            </Link>
                 </Flex>
                 <Text
                     maxW={{base:"100%", lg:"50%"}}

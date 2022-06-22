@@ -72,7 +72,7 @@ const IndexPage = () => {
                     onChange={toggleColorMode}
                 />
             </HStack>
-            <VStack spacing={8} mt={8}>
+            <VStack mt={8}>
                 <Stack
                     direction={{base:"column", lg:"row"}}
                     align="center"
@@ -99,7 +99,7 @@ const IndexPage = () => {
                             fontWeight="bold"
                             color={textColorVar}
                         >
-                            {t("developer")}
+                            {t("index.developer")}
                         </Text>
                     </VStack>
                     <Container
@@ -114,7 +114,7 @@ const IndexPage = () => {
                             height="100%"
                         >
                             <Text fontSize={["2xl", "xl"]} fontWeight="bold">
-                                {t("tech")}
+                                {t("index.tech")}
                             </Text>
                             <Text
                                 fontSize="md"
@@ -131,7 +131,7 @@ const IndexPage = () => {
                             >
                                 HTML, CSS, Angular, JavaScript, Python, Java,
                                 C#, SQL, MongoDB, PostgreSQL, Firebase, Git,
-                                Docker {t("more")}
+                                Docker {t("index.more")}
                             </Text>
                         </VStack>
                     </Container>
@@ -141,46 +141,54 @@ const IndexPage = () => {
                     fontWeight="bold"
                     color={textColor}
                 >
-                    {t("projects")}
+                    {t("index.projects")}
                 </Text>
                 <Flex p={2} direction={{ base: "column", md: "row" }} >
                     <ProjectContainer
                         title="HeyPlan"
                         subtitle="Flutter"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/heyplan-logob.png"
-                        text={t("heyplandesc")}
+                        text={t("index.heyplandesc")}
                         link="./heyplan"
                     />
                     <ProjectContainer
-                        title={t("schedulerTitle")}
+                        title={t("index.schedulerTitle")}
                         subtitle="React native"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
-                        text={t("schedulerDesc")}
+                        text={t("index.schedulerDesc")}
                         link="./scheduler"
                     />
                     <ProjectContainer
                         title={"PandaBox"}
                         subtitle="Angular NodeJs"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
-                        text={t("pandaDesc")}
-                        link="./scheduler"
+                        text={t("index.pandaDesc")}
+                        link="./pandabox"
                     />
                 </Flex>
-                <Text fontSize="2xl" fontWeight="bold">
-                    {t("about")}
+                <Text
+                    maxW={{base:"100%", lg:"50%"}}
+                    fontSize="lg"
+                    align="justify"
+                    color={textColorVar}
+                >
+                    {t("index.portfolio")}
+                </Text>
+                <Text pt={4} fontSize="2xl" fontWeight="bold">
+                    {t("index.about")}
                 </Text>
                 <Text
                     maxW={{base:"100%", lg:"50%"}}
                     fontSize="lg"
                     align="justify"
-                    p={2}
+                    py={4}
                     color={textColorVar}
                 >
-                    {t("aboutDesc")}
+                    {t("index.aboutDesc")}
                 </Text>
                 <VStack spacing={0} minW="100%">
                     <Text fontSize="2xl" fontWeight="bold">
-                        {t("contact")}
+                        {t("index.contact")}
                     </Text>
                     <Text
                         maxW={["95%", "50%"]}
@@ -189,7 +197,7 @@ const IndexPage = () => {
                         p={2}
                         color={textColorVar}
                     >
-                        {t("contactDesc")}
+                        {t("index.contactDesc")}
                     </Text>
                     <Flex
                         bg={bgColor}
@@ -202,8 +210,7 @@ const IndexPage = () => {
                     <a href="mailto:genis9d@gmail.com"><Image p={2}  src="https://img.icons8.com/color/48/undefined/gmail-new.png"/></a>
                     <a href="https://www.linkedin.com/in/genis-mora-casado-8263a4233/"><Image p={2} src="https://img.icons8.com/color/48/undefined/linkedin-circled--v1.png"/></a>
                     <a href="tel:+34693016402"><Image p={2} src="https://img.icons8.com/color/48/undefined/apple-phone.png"/></a>
-                    <a href="mailto:genis9d@gmail.com"><Image p={2} src="https://img.icons8.com/color/48/undefined/instagram-new--v1.png"/></a>
-                    <a href="mailto:genis9d@gmail.com"><Image p={2} src="https://img.icons8.com/color/48/undefined/telegram-app--v1.png"/></a>
+                    <a href="https://telegram.org/"><Image p={2} src="https://img.icons8.com/color/48/undefined/telegram-app--v1.png"/></a>
                     </Flex>
                 </VStack>
             </VStack>

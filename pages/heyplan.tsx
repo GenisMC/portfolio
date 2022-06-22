@@ -47,6 +47,7 @@ const HeyPlan = () => {
                         >
                             {item}
                             <br />
+                            <br />
                         </Text>
                     ))}
             </VStack>

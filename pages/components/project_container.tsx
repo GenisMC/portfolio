@@ -55,6 +55,7 @@ const ProjectContainer = (props: any) => {
                         <Image
                             maxW={{ base: "80%", xl: "40%" }}
                             objectFit="contain"
+                            alt="project"
                             src={props.image}
                         />
                         <Text fontSize="md" align="justify">

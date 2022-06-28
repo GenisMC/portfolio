@@ -47,6 +47,7 @@ const IndexPage = () => {
                         onClick={() => i18n.changeLanguage("es")}
                         leftIcon={
                             <Image
+                            alt="Spanish"
                                 src="https://github.com/CLEM-2/CLEM-2/raw/main/ES-Flag.png"
                                 maxW="20px"
                             />
@@ -59,6 +60,7 @@ const IndexPage = () => {
                         onClick={() => i18n.changeLanguage("en")}
                         leftIcon={
                             <Image
+                            alt="English"
                                 src="https://raw.githubusercontent.com/CLEM-2/CLEM-2/main/EN-Flag.jpg"
                                 maxW="20px"
                             />
@@ -82,7 +84,8 @@ const IndexPage = () => {
                 >
                     <Image
                         borderRadius="full"
-                        src="https://github.com/CLEM-2/CLEM-2/blob/main/heyplan/1650976988947.jpg?raw=true"
+                        alt="Profile"
+                        src="https://github.com/CLEM-2/CLEM-2/blob/main/ProfileSmall.jpg?raw=true"
                         boxSize="3xs"
                         fit="cover"
                     />
@@ -145,30 +148,39 @@ const IndexPage = () => {
                     {t("index.projects")}
                 </Text>
                 <Flex p={2} direction={{ base: "column", md: "row" }} >
-                            <Link href="./heyplan">
+                    <Link href="./heyplan" passHref>
+                        <a>
                     <ProjectContainer
                         title="HeyPlan"
                         subtitle="Flutter"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/heyplan-logob.png"
                         text={t("index.heyplandesc")}
+                        href="./heyplan"
                     />
-                            </Link>
-                            <Link href="./scheduler">
+                    </a>
+                    </Link>
+                    <Link href="./scheduler" passHref>
+                        <a>
                     <ProjectContainer
                         title={t("index.schedulerTitle")}
                         subtitle="React native"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/scheduler-icon.png"
                         text={t("index.schedulerDesc")}
+                        href="./scheduler"
                     />
-                            </Link>
-                            <Link href="./pandabox">
+                    </a>
+                    </Link>
+                    <Link href="./pandabox" passHref>
+                        <a>
                     <ProjectContainer
                         title={"PandaBox"}
                         subtitle="Angular NodeJs"
                         image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
                         text={t("index.pandaDesc")}
+                        href="./pandabox"
                     />
-                            </Link>
+                    </a>
+                    </Link>
                 </Flex>
                 <Text
                     maxW={{base:"100%", lg:"50%"}}
@@ -211,10 +223,10 @@ const IndexPage = () => {
                         justify="center"
                         wrap="wrap"
                     >
-                    <a href="mailto:genis9d@gmail.com"><Image p={2}  src="https://img.icons8.com/color/48/undefined/gmail-new.png"/></a>
-                    <a href="https://www.linkedin.com/in/genis-mora-casado-8263a4233/"><Image p={2} src="https://img.icons8.com/color/48/undefined/linkedin-circled--v1.png"/></a>
-                    <a href="tel:+34693016402"><Image p={2} src="https://img.icons8.com/color/48/undefined/apple-phone.png"/></a>
-                    <a href="https://telegram.org/"><Image p={2} src="https://img.icons8.com/color/48/undefined/telegram-app--v1.png"/></a>
+                    <a href="mailto:genis9d@gmail.com"><Image p={2} alt="mail"  src="https://img.icons8.com/color/48/undefined/gmail-new.png"/></a>
+                    <a href="https://www.linkedin.com/in/genis-mora-casado-8263a4233/"><Image p={2} alt="linkedin" src="https://img.icons8.com/color/48/undefined/linkedin-circled--v1.png"/></a>
+                    <a href="tel:+34693016402"><Image p={2} alt="phone" src="https://img.icons8.com/color/48/undefined/apple-phone.png"/></a>
+                    <a href="https://telegram.org/"><Image p={2} alt="telegram" src="https://img.icons8.com/color/48/undefined/telegram-app--v1.png"/></a>
                     </Flex>
                 </VStack>
             </VStack>

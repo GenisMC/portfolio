@@ -27,6 +27,7 @@ export default i18next
                         contact: "Contact",
                         contactDesc:
                             "You can contact me through the following links:",
+                        volutesDesc: "Volutes is a web app that functions as an online shop.  \n The app is made with React using NextJs, TailwindCSS, hosted on Vercel and uses a Supabase database.",
                     },
                     heyplan: {
                         title: "A mobile app made with Flutter",
@@ -39,6 +40,10 @@ export default i18next
                     pandabox: {
                         title: "A web app made with Angular and Firebase",
                         desc: "PandaBox started as a copy of DropBox just for me and my friends / family. It was one of the first big projects I've done. At the time I was leaning Angular at school so I used it to make this web app. \n It's main basic functionality allows users to upload any file and see it on the main page, thus woking like a cloud storage. After that other functionalities like sharing with others came. On the latest version, it allows users to create groups. These groups separate files uploaded to be seen only by it's members, extending the funcionality of the app to a shared cloud storage.",
+                    },
+                    volutes: {
+                        title: "A web app made with React",
+                        desc: "Volutes is a web app that functions as an online shop.  \n The app is hosted on Vercel and uses a Supabase database.",
                     },
                 },
             },
@@ -63,6 +68,7 @@ export default i18next
                         contact: "Contacto",
                         contactDesc:
                             "Puedes contactarme a través de los siguientes enlaces:",
+                        volutesDesc: "Volutes es una aplicación web que funciona como una tienda online.  \n La aplicación está alojada en Vercel y usa una base de datos Supabase.",
                     },
                     heyplan: {
                         title: "Una aplicación móvil hecha con Flutter",
@@ -75,6 +81,10 @@ export default i18next
                     pandabox: {
                         title: "Una aplicación web hecha con Angular y Firebase",
                         desc: "PandaBox empezó como una copia de DropBox solo para mí y mis amigos / familia. Fue uno de los primeros proyectos que he hecho. Cuando estudiaba Angular en la escuela, lo usé para hacer esta aplicación. \n Su función básica permite a los usuarios subir cualquier archivo y verlo en la página principal tambien la funcionalidad que permite compartir archivos con otros usuarios. Después de eso, otras funcionalidades como crear grupos. Estos grupos separan los archivos subidos para que solo se vean por los miembros del grupo, extendiendo la funcionalidad de la aplicación a un cloud storage compartido.",
+                    },
+                    volutes: {
+                        title: "Una aplicación web hecha con React",
+                        desc: "Volutes es una aplicación web que funciona como una tienda online. Lo creé como un medio para practicar mis habilidades de React mientras ayudaba a mi familia en su negocio. \n La aplicación permite a los usuarios crear una cuenta, agregar productos a un carrito y pagar. También permite al administrador agregar, eliminar y editar productos. \n La aplicación está alojada en Vercel y usa una base de datos Supabase.",
                     },
                 },
             },

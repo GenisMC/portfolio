@@ -16,12 +16,13 @@ const ProjectContainer = (props: any) => {
     return (
         <Container
             id="projectContainer"
-            my={[2]}
+            my={[3]}
             mx={[0, 2]}
             maxW="md"
             minW="3xs"
             bg={bgColor}
             p={6}
+            h="100%"
             borderRadius="16"
         >
             <Container id="afterBox">

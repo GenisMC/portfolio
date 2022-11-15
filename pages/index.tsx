@@ -173,7 +173,7 @@ const IndexPage = () => {
               />
             </a>
           </Link>
-          <Link className="projectLink" href="https://volutes.vercel.app/" passHref>
+          <Link className="projectLink" href="https://volutes.vercel.app/tienda-online" passHref>
             <a>
               <ProjectContainer
                 title={"Volutes"}

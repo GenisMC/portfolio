@@ -15,7 +15,6 @@ import {
 } from "@chakra-ui/react";
 import ProjectContainer from "./components/project_container";
 import { useTranslation } from "react-i18next";
-import Link from "next/link";
 
 const IndexPage = () => {
   // Translation Hook
@@ -118,16 +117,16 @@ const IndexPage = () => {
               justify="space-evenly"
               height="100%"
             >
-              <Text fontSize={["2xl", "xl"]} fontWeight="bold">
+              <Text fontSize={["3xl", "2xl"]} fontWeight="bold">
                 {t("index.tech")}
               </Text>
               <Text
-                fontSize="md"
+                fontSize="lg"
                 align={["center", "justify"]}
                 fontWeight="bold"
                 color={accentColor}
               >
-                React, TypeScript, Flutter, NodeJs.
+                Js/Ts, React, Svelte, Flutter
               </Text>
               <Box bg={bgColor} p={4} rounded={8} maxW={{ base: "100%", sm: "95%" }}>
                 <Text
@@ -135,9 +134,9 @@ const IndexPage = () => {
                   color={textColorVar}
                   align="justify"
                 >
-                  HTML, CSS, Angular, JavaScript, Python, Java,
-                  C#, SQL, MongoDB, PostgreSQL, Firebase, Git,
-                  Docker {t("index.more")}
+                  SSR (Next, Sveltekit), Angular, Python, Java, Rust,
+                  C#, SQL, MongoDB, PostgreSQL, Prisma,
+                  Docker, NodeJs, Tailwindcss {t("index.more")}
                 </Text>
               </Box>
             </VStack>
@@ -151,39 +150,27 @@ const IndexPage = () => {
           {t("index.projects")}
         </Text>
         <Stack p={2} pb={4} direction={{ base: "column", lg: "row" }} >
-          <Link className="projectLink" href="./heyplan" passHref>
-            <a>
-              <ProjectContainer
-                title="HeyPlan"
-                subtitle="Flutter"
-                image="https://github.com/CLEM-2/CLEM-2/raw/main/heyplan-logob.png"
-                text={t("index.heyplandesc")}
-                href="./heyplan"
-              />
-            </a>
-          </Link>
-          <Link className="projectLink" href="./pandabox" passHref>
-            <a>
-              <ProjectContainer
-                title={"PandaBox"}
-                subtitle="Angular NodeJs"
-                image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
-                text={t("index.pandaDesc")}
-                href="./pandabox"
-              />
-            </a>
-          </Link>
-          <Link className="projectLink" href="https://volutes.vercel.app/tienda-online" passHref>
-            <a>
-              <ProjectContainer
-                title={"Volutes"}
-                subtitle="React NextJs"
-                image="https://raw.githubusercontent.com/GenisMC/CLEM-2/main/volutes/LogoSquare.png"
-                text={t("index.volutesDesc")}
-                href="./pandabox"
-              />
-            </a>
-          </Link>
+          <ProjectContainer
+            title="HeyPlan"
+            subtitle="Flutter"
+            image="https://github.com/CLEM-2/CLEM-2/raw/main/heyplan-logob.png"
+            text={t("index.heyplandesc")}
+            href="./heyplan"
+          />
+          <ProjectContainer
+            title={"PandaBox"}
+            subtitle="Angular NodeJs"
+            image="https://github.com/CLEM-2/CLEM-2/raw/main/pandabox-logop.png"
+            text={t("index.pandaDesc")}
+            href="./pandabox"
+          />
+          <ProjectContainer
+            title={"Volutes"}
+            subtitle="React NextJs"
+            image="https://raw.githubusercontent.com/GenisMC/CLEM-2/main/volutes/LogoSquare.png"
+            text={t("index.volutesDesc")}
+            href="https://volutes.vercel.app/tienda-online"
+          />
         </Stack>
         <Box w={{ base: "100%", lg: "95%" }} h="1px" bg={textColorVar}></Box>
         <Text
@@ -235,7 +222,7 @@ const IndexPage = () => {
           </Flex>
         </VStack>
       </VStack>
-    </VStack>
+    </VStack >
   );
 };
 

@@ -20,10 +20,10 @@ export default i18next
                         pandaDesc:
                             "Web app that resembles dropbox, but with a panda as a logo. It allows you to upload files and share them with other people.",
                         more: "and more...",
-                        portfolio: "This portfolio page is made with React (TypeScript) using Next.js and Chakra UI.",
+                        portfolio: "This portfolio page is made with NextJs and Chakra UI.",
                         about: "About me",
                         aboutDesc:
-                            'I am a 22 year old full stack developer that never ceases to learn. I have a passion for coding, it is my job and my hobby.\n I am currently working on a project called "Food Scheduler", which is a web app that allows you to create and organize a weekly schedule for your meals. ',
+                            'I am a 23 year old full stack developer that never ceases to learn. I have a passion for coding, it is my job and my hobby.\n I am currently working on a project called "Food Scheduler", which is a web app that allows you to create and organize a weekly schedule for your meals. ',
                         contact: "Contact",
                         contactDesc:
                             "You can contact me through the following links:",
@@ -61,10 +61,10 @@ export default i18next
                         pandaDesc:
                             "Aplicación web que simula dropbox, pero con un panda como logotipo. Permite subir archivos y compartirlos con otras personas.",
                         more: "y más...",
-                        portfolio: "Este portfolio esta hecho con React (TypeScript) usando Next.js y Chakra UI.",
+                        portfolio: "Este portfolio esta hecho con NextJs y Chakra UI.",
                         about: "Sobre mí",
                         aboutDesc:
-                            'Soy desarrollador full stack de 22 años que nunca para de aprender. Tengo una pasión por la programación, es mi trabajo y mi hobby.\n Actualmente estoy trabajando en un proyecto llamado "Planificador de comida", es una aplicación web que permite crear y organizar una semana planificada para tus comidas.',
+                            'Soy desarrollador full stack de 23 años que nunca para de aprender. Tengo una pasión por la programación, es mi trabajo y mi hobby.\n Actualmente estoy trabajando en un proyecto llamado "Planificador de comida", es una aplicación web que permite crear y organizar una semana planificada para tus comidas.',
                         contact: "Contacto",
                         contactDesc:
                             "Puedes contactarme a través de los siguientes enlaces:",
